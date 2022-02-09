@@ -1,1 +1,5 @@
 %h1="Hello world" + "!"
+
+%ul
+  -@articles.each do |article|
+    %li=link_to article.title, article
